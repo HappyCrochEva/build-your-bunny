@@ -1,0 +1,61 @@
+/* 📱 MOBILE OPTIMIERUNG */
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 12px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .option {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .option img {
+        max-height: 180px;
+        object-fit: cover;
+    }
+
+    input[type="text"],
+    textarea,
+    button {
+        font-size: 16px;
+    }
+
+    button {
+        padding: 14px;
+        font-size: 18px;
+    }
+
+    #summary {
+        font-size: 16px;
+    }
+
+    ul {
+        padding-left: 20px;
+        text-align: left;
+    }
+}

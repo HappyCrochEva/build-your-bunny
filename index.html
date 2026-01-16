@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Häkel-Hasi Konfigurator</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdecef;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    background-color: #fff;
+    padding: 30px;
+    margin: 40px 0;
+    border-radius: 15px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #b05c7a;
+}
+
+.section {
+    margin: 40px 0;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.option {
+    border: 2px solid #f3c6d3;
+    padding: 12px;
+    width: 200px;
+    border-radius: 12px;
+    background-color: #fffafa;
+}
+
+.option img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.color-input {
+    width: 100%;
+    padding: 6px;
+    margin-top: 6px;
+}
+
+#summary {
+    background-color: #fdecef;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form input, form textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #b05c7a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<img src="logo.png" alt="HappyCrochEva Logo" width="180">
+
+<h1>🐰 Build your Bunny</h1>
+<p>Stelle dein ganz persönliches Häkel-Häschen zusammen 💕</p>
+<p style="font-size: 12px;">Achtung! Die folgenden Bilder sind Beispiele! Alle Outfits und Accessoires können individuell angepasst werden!</p>
+
+<!-- BASIS -->
+<div class="section">
+<h2>🐰 Basis-Hase</h2>
+<div class="options">
+
+<label class="option">
+Weiß – 25 €
+<input type="radio" name="basis" value="Basis: Weiß" data-price="25">
+</label>
+
+<label class="option">
+Beige – 25 €
+<input type="radio" name="basis" value="Basis: Beige" data-price="25">
+</label>
+
+<label class="option">
+Braun – 25 €
+<input type="radio" name="basis" value="Basis: Braun" data-price="25">
+</label>
+
+<label class="option">
+Wunschfarbe – 25 €
+<input type="radio" name="basis" value="Basis: Wunschfarbe" data-price="25">
+<input type="text" class="color-input" placeholder="Welche Farbe?">
+</label>
+
+</div>
+</div>
+
+<!-- KLEIDUNG -->
+<div class="section">
+<h2>👕 Kleidung</h2>
+<div class="options">
+
+<label class="option">
+T-Shirt – 5 €
+<input type="checkbox" value="T-Shirt" data-price="5">
+<input type="text" class="color-input" placeholder="Farbe">
+</label>
+
+<label class="option">
+Pullover – 5 €
+<input type="checkbox" value="Pullover" data-price="5">
+<input type="text" class="color-input" placeholder="Farbe">
+</label>
+
+<label class="option">
+Hose – 5 €
+<input type="checkbox" value="Hose" data-price="5">
+<input type="text" class="color-input" placeholder="Farbe">
+</label>
+
+<label class="option">
+Hoodie – 7 €
+<input type="checkbox" value="Hoodie" data-price="7">
+<input type="text" class="color-input" placeholder="Farbe">
+</label>
+
+<label class="option">
+Jacke – 5 €
+<input type="checkbox" value="Jacke" data-price="5">
+<input type="text" class="color-input" placeholder="Farbe">
+</label>
+
+<label class="option">
+Jacke mit Kapuze – 7 €
+<input type="checkbox" value="Jacke + Hood" data-price="7">
+<input type="text" class="color-input" placeholder="Farbe">
+</label>
+
+<label class="option">
+Latzhose – 10 €
+<input type="checkbox" value="Latzhose" data-price="10">
+<input type="text" class="color-input" placeholder="Farbe">
+</label>
+
+<label class="option">
+Kleid – 10 €
+<input type="checkbox" value="Kleid" data-price="10">
+<input type="text" class="color-input" placeholder="Farbe">
+</label>
+
+<label class="option">
+Jumpsuit – 15 €
+<input type="checkbox" value="Jumpsuit" data-price="15">
+<input type="text" class="color-input" placeholder="Farbe">
+</label>
+
+<label class="option">
+Schuhe – 5 €
+<input type="checkbox" value="Schuhe" data-price="5">
+<input type="text" class="color-input" placeholder="Farbe">
+</label>
+
+<label class="option">
+Schal – 5 €
+<input type="checkbox" value="Schal" data-price="5">
+<input type="text" class="color-input" placeholder="Farbe">
+</label>
+
+<label class="option">
+Wunsch-Kleidung - 10 €
+<input type="checkbox" value="Wunsch-Kleidung" data-price="10">
+<input type="text" class="color-input" placeholder="Beschreibung & Farbe">
+</label>
+
+</div>
+</div>
+
+<!-- KOPFBEDECKUNG -->
+<div class="section">
+<h2>🎀 Kopfbedeckung</h2>
+<div class="options">
+
+<label class="option">
+Haube – 5 €
+<input type="checkbox" value="Haube" data-price="5">
+<input type="text" class="color-input" placeholder="Farbe">
+</label>
+
+<label class="option">
+Stirnband – 3 €
+<input type="checkbox" value="Stirnband" data-price="3">
+<input type="text" class="color-input" placeholder="Farbe">
+</label>
+
+<label class="option">
+Schleife – 2 €
+<input type="checkbox" value="Schleife" data-price="2">
+<input type="text" class="color-input" placeholder="Farbe">
+</label>
+
+<label class="option">
+Wunsch-Kopfbedeckung - 5 €
+<input type="checkbox" value="Wunsch-Kopfbedeckung" data-price="5">
+<input type="text" class="color-input" placeholder="Beschreibung & Farbe">
+</label>
+
+</div>
+</div>
+
+<!-- ZUSAMMENFASSUNG -->
+<div class="section">
+<h2>🧾 Deine Auswahl</h2>
+<div id="summary">
+<ul id="list"></ul>
+<strong>Gesamtpreis: <span id="total">0</span> €</strong>
+</div>
+</div>
+
+<!-- FORMULAR -->
+<div class="section">
+<h2>📩 Bestellung absenden</h2>
+
+<p style="font-size: 13px; color: #777;">
+Diese Anfrage stellt keine verbindliche Bestellung dar.
+<br>
+Ein Verkauf kommt erst nach einem Preisvorschlag und persönlicher Bestätigung zustande.
+</p>
+
+<form action="https://formspree.io/f/mgoovren" method="POST">
+<input type="text" name="Name" placeholder="Vor- & Nachname" required>
+<input type="email" name="E-Mail" placeholder="E-Mail Adresse" required>
+
+<textarea name="Bestellung" id="orderText" readonly placeholder="Deine Bestellung"></textarea>
+<textarea name="Kommentar" placeholder="Kommentar / Extra Wünsche 💕 (z.B. Eine Blume auf dem Pullover)"></textarea>
+
+<button type="submit">Bestellung absenden 💌</button>
+</form>
+</div>
+
+<p>
+📸 Instagram:
+<a href="https://www.instagram.com/happycrocheva/?hl=de" target="_blank">
+@happycrocheva
+</a>
+</p>
+<br>
+<hr style="margin: 30px 0;">
+
+<p style="font-size: 14px;">
+<a href="impressum.html">Impressum</a> |
+<a href="datenschutz.html">Datenschutz</a>
+</p>
+
+</div>
+
+<script>
+const list = document.getElementById("list");
+const total = document.getElementById("total");
+const orderText = document.getElementById("orderText");
+
+function updateSummary() {
+    list.innerHTML = "";
+    let sum = 0;
+    let text = "";
+
+    document.querySelectorAll(".option").forEach(option => {
+        const input = option.querySelector("input[type='checkbox'], input[type='radio']");
+        const color = option.querySelector(".color-input");
+
+        if (input && input.checked && input.dataset.price !== undefined) {
+            const price = parseInt(input.dataset.price);
+            const colorInfo = color && color.value ? ` (Farbe: ${color.value})` : "";
+            const line = `${input.value}${colorInfo} – ${price} €`;
+
+            sum += price;
+            list.innerHTML += `<li>${line}</li>`;
+            text += line + "\n";
+        }
+    });
+
+    total.textContent = sum;
+    orderText.value = text + "\nGesamtpreis: " + sum + " €";
+}
+
+document.querySelectorAll("input").forEach(i =>
+    i.addEventListener("change", updateSummary)
+);
+</script>
+
+</body>
+</html>
