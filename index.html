@@ -86,7 +86,7 @@ button {
 
 <h1>🐰 Build your Bunny</h1>
 <p>Stelle dein ganz persönliches Häkel-Häschen zusammen 💕</p>
-<p style="font-size: 12px;">Achtung! Die folgenden Bilder sind Beispiele! Alle Outfits und Accessoires können individuell angepasst werden!</p>
+<p>Achtung! Die folgenden Bilder sind Beispiele! Alle Outfits und Accessoires können individuell angepasst werden!</p>
 
 <!-- BASIS -->
 <div class="section">
@@ -165,7 +165,7 @@ Latzhose
 </label>
 
 <label class="option">
-Kleid 
+Kleid
 <input type="checkbox" value="Kleid" data-price="10">
 <input type="text" class="color-input" placeholder="Farbe">
 </label>
@@ -203,7 +203,7 @@ Wunsch-Kleidung
 <div class="options">
 
 <label class="option">
-Haube 
+Haube
 <input type="checkbox" value="Haube" data-price="5">
 <input type="text" class="color-input" placeholder="Farbe">
 </label>
@@ -215,14 +215,14 @@ Stirnband
 </label>
 
 <label class="option">
-Schleife 
+Schleife
 <input type="checkbox" value="Schleife" data-price="2">
 <input type="text" class="color-input" placeholder="Farbe">
 </label>
 
 <label class="option">
 Wunsch-Kopfbedeckung
-<input type="checkbox" value="Wunsch" data-price="5">
+<input type="checkbox" value="Wunsch-Kopfbedeckung" data-price="5">
 <input type="text" class="color-input" placeholder="Beschreibung & Farbe">
 </label>
 
@@ -234,6 +234,7 @@ Wunsch-Kopfbedeckung
 <h2>🧾 Deine Auswahl</h2>
 <div id="summary">
 <ul id="list"></ul>
+<strong>Gesamtpreis: <span id="total">0</span> €</strong>
 </div>
 </div>
 
@@ -243,20 +244,18 @@ Wunsch-Kopfbedeckung
 
 <p style="font-size: 13px; color: #777;">
 Diese Anfrage stellt keine verbindliche Bestellung dar.
-<br>
-Dein Häschen wird erst nach Bestätigung beider Parteien angefertig.
 </p>
 
 <form action="https://formspree.io/f/mgoovren" method="POST">
-<input type="text" name="Name" placeholder="Name" required>
+<input type="text" name="Name" placeholder="Vor- & Nachname" required>
 
-<textarea name="Bestellung" id="orderText" readonly placeholder="Deine Bestellung"></textarea>
-<textarea name="Kommentar" placeholder="Kommentar / Extra Wünsche 💕 (z.B. Eine Blume auf dem Pullover)"></textarea>
+<textarea name="Bestellung" id="orderText" readonly></textarea>
+<textarea name="Kommentar" placeholder="Kommentar / Extra Wünsche 💕"></textarea>
 
 <button type="submit">Bestellung absenden 💌</button>
 </form>
 </div>
-<p>Mit deiner Bestellung bestätigst du, dass ein Foto deines fertigen Häschens auf Instagram gepostet werden darf :)</p>
+
 <p>
 📸 Instagram:
 <a href="https://www.instagram.com/happycrocheva/?hl=de" target="_blank">
@@ -308,8 +307,4 @@ document.querySelectorAll("input").forEach(i =>
 </script>
 
 </body>
-
 </html>
-
-
-
